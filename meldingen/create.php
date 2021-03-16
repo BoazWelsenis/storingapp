@@ -23,7 +23,7 @@
                 <label for="type">Type</label>
                 <select name="type" id="type">
                     <option value="">- kies een type - </option>
-                    <option value="Achtbaan">Achtbaan</option>
+                    <option value="achtbaan">Achtbaan</option>
                     <option value="draaiend">Draaiend</option>
                     <option value="kinder">Kinder</option>
                     <option value="horeca">Horeca</option>

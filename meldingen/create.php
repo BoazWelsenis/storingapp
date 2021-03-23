@@ -14,6 +14,9 @@
         <h1>Nieuwe melding</h1>
 
         <form action="../backend/meldingenController.php" method="POST">
+
+            <!-- CONTROLLER MET MEERDERE ACTIES - CREATE IN DIT GEVAL -->
+            <input type="hidden" name="action" value="create">
         
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>

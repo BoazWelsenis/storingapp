@@ -8,7 +8,14 @@
             <a href="<?php echo $base_url; ?>/meldingen/index.php">Meldingen</a>
         </nav>
         <div>
-            <a href="#" style="color: lightgrey;">Inloggen</a>
+            <!-- <a href="<?php echo $base_url; ?>/login.php">Inloggen</a> -->
+
+            <!-- Wanneer de gebruiker is ingelogd wordt de tekst waar inloggen stond, naar uitloggen aangepast -->
+            <?php if(isset($_SESSION['user_id'])): ?>
+                <a href="<?php echo $base_url; ?>/logout.php">Uitloggen</a>
+            <?php else: ?>
+                <a href="<?php echo $base_url; ?>/login.php">Inloggen</a>
+            <?php endif; ?>
         </div>
     </div>
 </header>

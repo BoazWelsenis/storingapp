@@ -1,3 +1,16 @@
+<?php
+    //Session starten ophalen user_id of gebruiker herkennen
+    session_start();
+
+    //Kijken of er iemand is ingelogd --> zo niet wordt degene terug gestuurd login.php (pagina's beveiligen)
+    if(!isset($_SESSION['user_id']))
+    {
+        $msg = "Je moet eerst inloggen!";
+        header("Location: ../login.php?msg=$msg");
+        exit;
+    }
+?>
+
 <!doctype html>
 <html lang="nl">
 

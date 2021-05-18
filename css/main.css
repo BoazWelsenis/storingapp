@@ -184,6 +184,13 @@ tr:hover{
   background-color: #d3d3d3;
 }
 
+/* FLEX */
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 
 

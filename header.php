@@ -11,11 +11,17 @@
             <!-- <a href="<?php echo $base_url; ?>/login.php">Inloggen</a> -->
 
             <!-- Wanneer de gebruiker is ingelogd wordt de tekst waar inloggen stond, naar uitloggen aangepast -->
-            <?php if(isset($_SESSION['user_id'])): ?>
-                <a href="<?php echo $base_url; ?>/logout.php">Uitloggen</a>
-            <?php else: ?>
-                <a href="<?php echo $base_url; ?>/login.php">Inloggen</a>
-            <?php endif; ?>
+            <div class="flex header-right">
+                <a href="register.php">Registeren</a>
+
+                <div class="seperator"><p>|</p></div>
+
+                <?php if(isset($_SESSION['user_id'])): ?>
+                    <a href="<?php echo $base_url; ?>/logout.php">Uitloggen</a>
+                <?php else: ?>
+                    <a href="<?php echo $base_url; ?>/login.php">Inloggen</a>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </header>
